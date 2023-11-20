@@ -1,0 +1,52 @@
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.device {
+  border-radius: 1.25rem;
+  outline: 8px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  width: 13.375rem;
+  height: 28.95rem;
+  transform: skew(-5deg, 0deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+.fw-semibold {
+  font-weight: 500;
+}
+
+.fs-7 {
+  font-size: 0.875rem !important;
+}
+
+.card-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.section {
+  padding: 9rem 3rem !important;
+}
+
+@keyframes float {
+  0% {
+    transform: skew(-5deg, 0deg) translate(0, -0.5rem);
+  }
+  50% {
+    transform: skew(-5deg, 0deg) translate(0, 0.5rem);
+  }
+  100% {
+    transform: skew(-5deg, 0deg) translate(0, -0.5rem);
+  }
+}
